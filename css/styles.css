@@ -1,0 +1,331 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "superclarendon";
+    font-weight: 131pt;
+    font-style: bold;
+    font-size: 37pt;
+    color: rgb(178, 45, 46);
+    margin-top: 3%;
+}
+
+h2 {
+    font-family: "superclarendon";
+    font-weight: 81pt;
+    font-style: bold;
+    font-size: 22pt;
+    color: rgb(178, 45, 46);
+    margin-top: 3%;
+}
+
+h3 {
+    font-family: "seravek-web";
+    font-weight: 50pt;
+    font-style: medium;
+    font-size: 18pt;
+    color: rgb(107, 142, 60);
+    margin-top: 3%;
+}
+
+h4 {
+    font-family: "seravek-web";
+    font-weight: 31pt;
+    font-style: medium;
+    font-size: 16pt;
+    color: rgb(51, 51, 51);
+    margin-top: 3%;
+}
+
+h5 {
+    font-family: "seravek-web";
+    font-weight: 19pt;
+    font-style: medium;
+    font-size: 14pt;
+    color: rgb(51, 51, 51);
+    margin-top: 3%;
+}
+
+p {
+    font-family: "seravek-web";
+    font-weight: 12pt;
+    font-style: regular;
+    font-size: 12pt;
+    color: rgb(51, 51, 51);
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(4, 1);
+    grid-row-gap: 0px;
+    background-color: rgb(178, 45, 46);
+    padding: 0% 8%;
+}
+
+/* Home */
+.home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1);
+    grid-row-gap: 0px;
+    background-color: rgb(107, 142, 60);
+}
+
+.logoone {
+    grid-area: 1/1/4/4;
+    padding: 10px;
+}
+
+.navigationone {
+    grid-area: 4/1/5/4;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    color: rgb(178, 45, 46);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(248, 243, 230);
+}
+
+.spread {
+    grid-area: 5/1/8/4;
+    text-align: right;
+}
+
+.housemade {
+    position: relative;
+    bottom: 60px;
+    right: 20px;
+    background-color: rgb(178, 45, 46);
+}
+
+/* End Home */
+
+/* Menu */
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1);
+    background-color: rgb(248, 243, 230);
+    padding: 0% 4%;
+}
+
+.ourmenu {
+    grid-area: 1/1/2/2;
+}
+
+
+.pizza {
+    grid-area: 2/1/3/2;
+    display: grid;
+    grid-template-rows: repeat(2);
+
+}
+
+.signature {
+    grid-area: auto;
+    display: grid;
+    grid-template-columns: 1;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+.byo {
+    grid-area: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+
+.appetizers {
+    grid-area: 3/1/4/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 20px;
+}
+
+.salads {
+    grid-area: 4/1/5/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+
+.sandwiches {
+    grid-area: 5/1/6/2;
+    display: grid;
+    grid-template-rows: repeat(2);
+}
+
+.submarine {
+    grid-area: auto;
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-gap: 20px;
+}
+
+.specialties {
+    grid-area: auto;
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-gap: 20px;
+}
+
+
+.drinks {
+    grid-area: 6/1/7/2;
+    display: grid;
+    grid-template-rows: repeat(3, 1);
+}
+
+.cocktail {
+    grid-area: auto;
+    display: grid;
+    grid-template-rows: repeat(2);
+    grid-gap: 20px;
+}
+
+.beer {
+    grid-area: auto;
+    display: grid;
+    grid-template-rows: repeat(3);
+    grid-gap: 20px;
+}
+
+.softdrinks {
+    grid-area: auto;
+}
+
+/* End Menu */
+
+/* Story */
+.story {
+    display: grid;
+    grid-template-columns: 1;
+    padding: 10px;
+    background-color: rgb(248, 243, 230);
+    padding: 0% 4%;
+}
+
+.partone {
+    grid-area: auto;
+}
+
+.parttwo {
+    grid-area: auto;
+}
+
+.partthree {
+    grid-area: auto;
+}
+
+/* End Story */
+
+/* Info */
+.info {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(4);
+    background-color: rgb(107, 142, 60);
+    padding: 0% 4%;
+}
+
+.hours {
+    grid-area: 1/1/3/2;
+}
+
+.address {
+    grid-area: 1/2/2/3;
+    line-height: 50%;
+}
+
+.phone {
+    grid-area: 2/2/3/3;
+    line-height: 50%;
+}
+
+.navigationtwo {
+    grid-area: 3/1/4/3;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.logotwo {
+    grid-area: 4/1/5/3;
+    width: 50%;
+    margin: 0 auto;
+    padding: 4%;
+}
+
+/* End Info */
+
+/* Desktop/Tablet Layout */
+
+@media (min-width: 865px) {
+
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .logoone {
+        grid-area: auto;
+        width: 50%;
+    }
+
+    .imgone,
+    .imgtwo,
+    .imgthree {
+        grid-area: auto;
+        width: 300px;
+    }
+
+    .navigationone {
+        grid-area: auto;
+        position: relative;
+        top: 65%;
+    }
+
+    .signature,
+    .byo,
+    .appetizers,
+    .salads,
+    .submarine,
+    .specialties,
+    .cocktail,
+    .story {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .beer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
